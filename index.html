@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stop Juggling Tools: Get Your FREE Systeme.io Account Today!</title>
+    <title>Get Your FREE All-In-One Business Builder: Systeme.io</title>
     <meta name="description" content="Discover Systeme.io, the all-in-one free platform for sales funnels, email marketing, online courses, and more. Simplify your business and save money.">
+    
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
@@ -18,21 +19,22 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f9fafb; /* Light gray background */
+            background-color: #f9fafb;
             display: flex;
             flex-direction: column;
             align-items: center;
-            counter-reset: feature-counter; /* Initialize counter for features */
         }
 
         .container {
             width: 100%;
-            max-width: 900px; /* Max width for content */
+            max-width: 900px;
             padding: 0 20px;
             margin: 0 auto;
+            position: relative;
+            z-index: 2;
         }
 
         /* Typography */
@@ -40,35 +42,35 @@
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 0.75em;
-            color: #111827; /* Darker text for headings */
+            color: #111827;
         }
 
         h1 {
-            font-size: clamp(2.25rem, 5vw, 3.5rem); /* Fluid font size for H1 */
+            font-size: clamp(2.0rem, 5vw, 3.25rem); 
             text-align: center;
         }
 
         h2 {
-            font-size: clamp(1.75rem, 4vw, 2.5rem); /* Fluid font size for H2 */
+            font-size: clamp(1.75rem, 4vw, 2.5rem); 
             text-align: center;
             margin-top: 2.5em;
         }
 
-        h3 { /* General H3 styling */
-            font-size: clamp(1.25rem, 3vw, 1.75rem);
+        h3 {
+            font-size: clamp(1.25rem, 3.5vw, 1.75rem); 
             color: #1f2937;
         }
 
         p {
             margin-bottom: 1em;
             font-size: 1rem;
-            color: #374151; /* Medium dark gray for paragraphs */
+            color: #374151; 
         }
 
         ul {
             list-style-position: inside;
             margin-bottom: 1.5em;
-            padding-left: 0; /* Reset default padding */
+            padding-left: 0; 
         }
 
         ul li {
@@ -77,138 +79,190 @@
             color: #374151;
             background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%2322c55e" width="20" height="20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>') no-repeat left center;
             background-size: 1.2em;
-            padding-left: 1.8em; /* Space for the custom bullet */
-            list-style-type: none; /* Hide default bullet */
+            padding-left: 1.8em; 
+            list-style-type: none; 
         }
 
-
-        /* Buttons */
+        /* Enhanced Button Styling */
         .cta-button {
             display: inline-block;
-            background-color: #2563eb; /* Vibrant blue */
+            background-color: #2563eb;
             color: #ffffff;
-            font-size: 1.15rem;
+            font-size: clamp(1.1rem, 2.5vw, 1.25rem);
             font-weight: 600;
             text-decoration: none;
-            padding: 15px 30px;
+            padding: 16px 32px;
             border-radius: 8px;
             border: none;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         .cta-button:hover, .cta-button:focus {
-            background-color: #1d4ed8; /* Darker blue on hover */
-            transform: translateY(-2px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            background-color: #1d4ed8;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+        .cta-button:active {
+            transform: translateY(-1px);
+            background-color: #1e40af;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
         }
 
         /* Sections Styling */
         .section {
-            padding: 40px 0;
+            padding: 50px 0;
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
         }
 
+        /* HERO SECTION Refinements */
         .hero-section {
-            background-color: #ffffff; /* White background for hero */
-            padding-top: 60px;
-            padding-bottom: 60px;
+            background-color: #111827;
+            padding-top: clamp(60px, 10vh, 100px);
+            padding-bottom: clamp(60px, 10vh, 100px);
             text-align: center;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
         }
+
+        #hero-video-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            opacity: 0.3;
+        }
+        
         .hero-section .container {
-            max-width: 750px; /* Slightly narrower for hero content focus */
+            max-width: 800px; 
+            z-index: 1;
         }
+
         .hero-section h1 {
-            color: #1f2937;
+            color: #ffffff;
+            margin-bottom: 0.5em;
         }
-        .hero-section .sub-heading {
-            font-size: 1.25rem;
-            color: #4b5563;
+        .hero-section h2 {
+            color: #e5e7eb;
+            font-size: clamp(1.2rem, 3vw, 1.75rem);
+            font-weight: 400;
+            margin-top: 0;
             margin-bottom: 1.5em;
-            max-width: 650px;
-            margin-left: auto;
-            margin-right: auto;
         }
         .hero-section ul {
             text-align: left;
-            max-width: 550px; /* Adjust width of the list */
-            margin: 1.5em auto 2em auto; /* Center the list block */
+            max-width: 580px; 
+            margin: 1.5em auto 2em auto; 
+            color: #d1d5db;
+        }
+        .hero-section ul li {
+            color: #d1d5db;
+            background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%2334d399" width="20" height="20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>');
+        }
+        .trustline {
+            color: #9ca3af;
+            font-size: 0.9rem;
+            margin-top: -1em;
+            margin-bottom: 2em;
         }
 
-        .problem-solution-section {
-            background-color: #f9fafb;
+        /* "WHAT IS SYSTEME.IO?" Section */
+        .what-is-section {
+            background-color: #ffffff;
         }
-        .problem-solution-section .container {
-            max-width: 700px;
+        .what-is-section .container {
+            max-width: 750px;
         }
-        .problem-solution-section p {
+        .what-is-section h2 {
+             margin-top: 0;
+        }
+        .what-is-section p {
             font-size: 1.1rem;
             text-align: center;
+            color: #374151;
+        }
+        .what-is-section p em {
+            font-style: normal;
+            font-weight: 600;
+            color: #2563eb;
         }
 
+        /* "WHAT CAN YOU DO?" Section (Enhanced Feature Blocks) */
         .features-section {
-            background-color: #ffffff;
+            background-color: #f9fafb;
         }
         .feature-blocks-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin-top: 2em;
+            margin-top: 2.5em;
             width: 100%;
         }
         .feature-block {
-            background-color: #f9fafb; /* Light background for blocks */
-            padding: 25px;
-            border-radius: 8px;
-            text-align: center; /* Keep text centered */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            background-color: #ffffff; 
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center content horizontally */
+            align-items: center;
         }
 
         .feature-block h3 {
-            display: flex; /* Use flex to align number and text */
-            align-items: center; /* Vertically align number and text */
-            justify-content: center; /* Center the h3 content if it's narrower than the block */
-            font-size: 1.35rem; /* Adjusted for number */
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
             color: #1f2937;
-            margin-bottom: 0.7em; /* Space below heading */
-            position: relative; /* For pseudo-element positioning */
-        }
-
-        .feature-block h3::before {
-            counter-increment: feature-counter; /* Increment the counter */
-            content: "0" counter(feature-counter); /* Display counter with leading zero */
-            font-weight: 700;
-            font-size: 1.1rem; /* Size of the number */
-            color: #2563eb; /* Blue color for the number, matching CTA */
-            background-color: rgba(37, 99, 235, 0.1); /* Light blue background for number */
-            border-radius: 50%; /* Circular background */
-            padding: 8px;
-            width: 36px; /* Fixed width for circle */
-            height: 36px; /* Fixed height for circle */
-            line-height: 20px; /* Adjust to center text in circle */
-            text-align: center;
-            margin-right: 12px; /* Space between number and heading text */
-            flex-shrink: 0; /* Prevent number from shrinking */
+            margin-bottom: 0.7em; 
         }
 
         .feature-block p {
             font-size: 0.95rem;
             color: #4b5563;
         }
+        
+        /* Styles for the container of the feature visual (image/icon) */
+        .feature-visual-placeholder {
+            border: none; 
+            padding: 0;   
+            min-height: auto; 
+            margin-bottom: 25px; /* Increased margin slightly for larger image */
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            height: 110px; /* UPDATED: Increased container height for larger image */
+            width: 100%; 
+        }
+
+        /* Styles for images within the feature visual placeholder */
+        .feature-visual-placeholder img {
+            width: 650px; /* UPDATED: Increased image width */
+            height: 100px; /* UPDATED: Increased image height */
+            object-fit: contain; 
+            display: block;
+        }
 
 
+        /* SECONDARY CALL TO ACTION Section */
         .secondary-cta-section {
-            background-color: #1f2937; /* Dark background for contrast */
+            background-color: #1f2937; 
             color: #ffffff;
-            padding: 60px 0;
+            padding: clamp(60px, 10vh, 100px) 0;
         }
         .secondary-cta-section .container {
             max-width: 700px;
@@ -218,23 +272,26 @@
             color: #ffffff;
         }
         .secondary-cta-section p {
-            color: #e5e7eb; /* Lighter text for dark background */
+            color: #e5e7eb; 
             font-size: 1.1rem;
             margin-bottom: 1.5em;
         }
         .secondary-cta-section .cta-button {
-            background-color: #34d399; /* Green for secondary CTA */
-            color: #064e3b; /* Dark green text for contrast on light green button */
+            background-color: #34d399;
+            color: #064e3b; 
         }
         .secondary-cta-section .cta-button:hover, .secondary-cta-section .cta-button:focus {
-            background-color: #10b981; /* Darker green on hover */
+            background-color: #10b981; 
+        }
+        .secondary-cta-section .cta-button:active {
+            background-color: #059669;
         }
 
-
+        /* FOOTER Section */
         .footer-section {
-            background-color: #111827; /* Very dark for footer */
-            color: #d1d5db; /* Light gray text for footer */
-            padding: 30px 0;
+            background-color: #111827; 
+            color: #d1d5db; 
+            padding: 40px 0;
             text-align: center;
             font-size: 0.9rem;
         }
@@ -242,7 +299,7 @@
             max-width: 900px;
         }
         .footer-section a {
-            color: #9ca3af; /* Lighter gray for links */
+            color: #9ca3af; 
             text-decoration: none;
             margin: 0 10px;
         }
@@ -251,42 +308,25 @@
             text-decoration: underline;
         }
 
-        /* Image/Video Placeholders (if you decide to add them later) */
-        .img-placeholder, .video-placeholder {
-            width: 100%;
-            max-width: 400px; /* Adjust as needed */
-            height: 250px; /* Adjust as needed */
-            background-color: #e0e0e0;
-            border-radius: 8px;
-            margin: 20px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            color: #777;
-            text-align: center;
+        /* Helper for screen reader only text if needed */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
         }
 
-
-        /* Mobile First - Media Queries for larger screens (if needed, base is mobile friendly) */
+        /* Media Queries (example adjustments) */
         @media (min-width: 768px) {
-            .hero-section {
-                padding-top: 80px;
-                padding-bottom: 80px;
-            }
-            .section {
-                padding: 60px 0;
-            }
-            .feature-blocks-container {
-                /* On larger screens, you might want to enforce a 3-column layout if there are 3 items, or 2-column for 4 items etc. */
-                /* grid-template-columns: repeat(3, 1fr); */
-            }
-             .hero-section ul {
-                padding-left: 20px; /* Add some padding for bullets if they look off */
-            }
-            .feature-block h3 {
-                 /* justify-content: flex-start; /* Align heading to the left on larger screens if preferred */
-            }
+            /* .feature-blocks-container { grid-template-columns: repeat(2, 1fr); } */
+        }
+        @media (min-width: 992px) {
+            /* .feature-blocks-container { grid-template-columns: repeat(4, 1fr); } */
         }
 
     </style>
@@ -294,9 +334,11 @@
 <body>
 
     <section class="section hero-section">
+        <video id="hero-video-background" autoplay loop muted playsinline preload="auto">
+            </video>
         <div class="container">
-            <h1>Tired of Juggling 5+ Marketing Tools?</h1>
-            <p class="sub-heading">Get Sales Funnels, Email Marketing, Online Courses & More – All Under One Roof, Absolutely Free to Start!</p>
+            <h1>Get Your FREE All-In-One Business Builder: Sales Funnels, Email, Courses & More!</h1>
+            <h2>Stop Juggling Expensive Tools & Simplify Your Online Business Today.</h2>
             <ul>
                 <li>Eliminate expensive monthly subscriptions.</li>
                 <li>Build stunning sales funnels in minutes.</li>
@@ -304,18 +346,18 @@
                 <li>Host and sell your online courses with ease.</li>
                 <li>Manage affiliates and run your entire business from one dashboard.</li>
             </ul>
+            <p class="trustline">Join 400,000+ Entrepreneurs Worldwide.</p>
             <button class="cta-button" id="hero-cta-button" data-affiliate-link="https://systeme.io/?sa=sa0234923961a0c999d79da99621e44d803e2b0b95">
-                🚀 Get Your FREE Systeme.io Account Now!
+                🚀 Get Your FREE Account Now!
             </button>
-            </div>
+        </div>
     </section>
 
-    <section class="section problem-solution-section">
+    <section class="section what-is-section">
         <div class="container">
-            <h2>The #1 Frustration for Online Entrepreneurs... SOLVED.</h2>
-            <p>You're trying to grow your online business, but you're drowning in expensive software subscriptions and frustrating tech hurdles. Each tool requires its own learning curve, costs, and login.</p>
-            <p>Imagine having <em>everything</em> you need – from lead capture to course delivery – seamlessly integrated in one powerful, intuitive platform. That's Systeme.io.</p>
-            </div>
+            <h2>Finally, Simplify Your Online Business (for Free!)</h2>
+            <p>Systeme.io is the revolutionary platform that combines everything you need to build, grow, and scale your online business. No more expensive subscriptions or complex setups. Get sales funnels, email marketing, website building, online courses, and affiliate management – all in one powerful, <em>free</em> solution.</p>
+        </div>
     </section>
 
     <section class="section features-section">
@@ -323,19 +365,31 @@
             <h2>What Can YOU Do With Your FREE Systeme.io Account?</h2>
             <div class="feature-blocks-container">
                 <div class="feature-block">
-                    <h3>Build High-Converting Funnels</h3>
+                    <div class="feature-visual-placeholder">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/161/627a40b94cacd_Systeme.io_Sales_Funnels.png" alt="High-Converting Sales Funnels Icon">
+                    </div>
+                    <h3>Build High-Converting Sales Funnels in Minutes</h3>
                     <p>Create stunning landing pages, squeeze pages, and sales funnels without coding. Drag-and-drop simplicity.</p>
                 </div>
                 <div class="feature-block">
-                    <h3>Automate Your Emails</h3>
+                    <div class="feature-visual-placeholder">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/161/628fd87173566_SIO_Automations.jpg" alt="Email Marketing Automation Icon">
+                    </div>
+                    <h3>Automate Your Email Marketing & Nurture Leads</h3>
                     <p>Send unlimited emails, build your list, and set up automated campaigns to nurture your leads.</p>
                 </div>
                 <div class="feature-block">
-                    <h3>Launch & Sell Online Courses</h3>
+                    <div class="feature-visual-placeholder">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/161/60b8b87b701bc_Groupe27032x1.png" alt="Online Course Platform Icon">
+                    </div>
+                    <h3>Launch & Sell Your Online Courses with Ease</h3>
                     <p>Host your course content, manage students, and process payments all from one secure platform.</p>
                 </div>
                 <div class="feature-block">
-                    <h3>Manage Your Own Affiliate Program</h3>
+                    <div class="feature-visual-placeholder">
+                        <img src="https://www.knowaboutweb.com/wp-content/uploads/2021/11/systeme-io-1024x528.jpg" alt="Affiliate Program Management Icon">
+                    </div>
+                    <h3>Manage Your Own Affiliate Program Effortlessly</h3>
                     <p>Recruit and manage affiliates to promote your products, growing your reach effortlessly.</p>
                 </div>
             </div>
@@ -363,41 +417,37 @@
     </footer>
 
     <script>
-        // JavaScript for Button Click Handler and Current Year
         document.addEventListener('DOMContentLoaded', function() {
-            // Set current year in footer
             const yearSpan = document.getElementById('currentYear');
             if (yearSpan) {
                 yearSpan.textContent = new Date().getFullYear();
             }
 
-            // Select all buttons with the data-affiliate-link attribute
             const affiliateButtons = document.querySelectorAll('button[data-affiliate-link]');
 
             affiliateButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const affiliateUrl = this.getAttribute('data-affiliate-link');
+                button.addEventListener('click', function(event) {
+                    const affiliateUrl = event.target.dataset.affiliateLink; 
+                    const buttonId = event.target.id; 
 
-                    // Ensure affiliate URL is not a placeholder
                     if (affiliateUrl && affiliateUrl !== "YOUR_SYSTEMEIO_AFFILIATE_LINK_HERE" && affiliateUrl.trim() !== "") {
-                        // Fire TikTok Pixel Custom Event (if TikTok Pixel is loaded)
                         if (typeof ttq !== 'undefined') {
-                            ttq.track('ClickCTA', {
-                                content_id: 'systemeio_free_signup', // Generic ID for this offer
-                                content_name: 'systemeio_free_button_click',
-                                button_id: this.id // Pass the ID of the clicked button
+                            ttq.track('ClickCTA', { 
+                                content_id: 'systemeio_free_signup', 
+                                content_name: 'systemeio_free_button_click', 
+                                button_id: buttonId 
                             });
-                            console.log('TikTok Pixel ClickCTA event fired for button:', this.id);
+                            console.log('TikTok Pixel ClickCTA event fired for button_id:', buttonId);
                         } else {
                             console.warn('TikTok Pixel (ttq) not found. Make sure the base code is installed.');
                         }
-
-                        // Redirect the user to the affiliate URL
                         console.log('Redirecting to:', affiliateUrl);
                         window.location.href = affiliateUrl;
                     } else {
-                        console.error('Affiliate link is not set or is still a placeholder on button with ID:', this.id);
-                        alert('Affiliate link is not configured correctly. Please replace "YOUR_SYSTEMEIO_AFFILIATE_LINK_HERE" with your actual link.');
+                        console.error('Affiliate link is not set or is still a placeholder on button with ID:', buttonId);
+                        if (affiliateUrl === "YOUR_SYSTEMEIO_AFFILIATE_LINK_HERE") {
+                             alert('The affiliate link is not configured correctly. Please update it before use.');
+                        }
                     }
                 });
             });
